@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    >
+<android.support.design.widget.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="one"
+    app:hintAnimationEnabled="true"
+    app:counterEnabled="true"
+    app:counterMaxLength="10"
+    app:hintTextAppearance="@style/TextLabel"
+    app:counterOverflowTextAppearance="@style/myError"
+
+    >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="two"
+        app:hintAnimationEnabled="true"
+        app:counterEnabled="true"
+        android:id="@+id/text_input"
+        app:errorEnabled="true"
+        app:errorTextAppearance="@style/MyStyle2"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </android.support.design.widget.TextInputLayout>
+</LinearLayout>
